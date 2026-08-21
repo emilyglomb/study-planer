@@ -1,0 +1,15 @@
+# Core app (needed to run start.command / start.bat / frontend.py)
+flask~=3.1.0
+pandas~=3.0.0
+
+# Data pipeline (only needed to rerun the PDF extraction in
+# data/data_processing/pdfextractor.py and studyarea.py)
+pdfplumber~=0.11.0
+
+# Data science / module clustering (data/data_processing/cleaning.ipynb -
+# k-means difficulty classification, PCA visualization, elbow/silhouette
+# model selection). Not imported by the running app itself, but part of the
+# project's data science pipeline and needed to rerun the notebook.
+numpy~=2.5.0
+scikit-learn~=1.7.0
+matplotlib~=3.10.0

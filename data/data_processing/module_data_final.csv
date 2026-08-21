@@ -1,0 +1,232 @@
+id,name,credits,WLH,attendance_time,selfstudy_time,AR,RPK,frequency,duration,RS,examination_type,examination_prerequisites,study_area,study_restriction,avg_grade,failure_rates,difficulty
+B.Bio-NF.117,Genomanalyse - Vorlesung mit Übung,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4, 5, 6]",Written,none,['I.2.a.II.2.a'],"['B.Bio.117', 'SK.Bio.117']",1.72,0.0,easy
+B.Bio-NF.129,Genetik und mikrobielle Zellbiologie,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,"[4, 5, 6]",Written,none,['I.2.a.II.2.b'],['B.Bio.129'],,,easy
+B.Bio-NF.130,Kognitionspsychologie,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5, 6]",Written,none,"['I.2.a.II.2.b', 'I.2.a.IX.2.b']",['B.Bio.130'],2.323,0.038461538461538464,easy
+B.Bio.102,Ringvorlesung Biologie II,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],S,1.0,[2],Written,none,['I.2.a.II.2.a'],[],3.096,0.10172413793103449,hard
+B.ES.115,Ecological Modelling,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[3],Presentation,written exam,['I.2.a.IV.1.a'],[],1.323,0.0,medium
+B.Forst.1101,Grundlagen der Forstbotanik,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[1],Written,none,['I.2.a.IV.2.a'],[],2.4725,0.06675242995997713,easy
+B.Forst.1105,Angewandte Informatik (inkl. GIS),6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[1],Written,none,['I.2.a.IV.1.a'],[],2.623,0.11542730299667037,easy
+B.Forst.1108,Bodenkunde,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Forst.1103'],S,1.0,[2],Written,none,['I.2.a.IV.2.a'],[],2.914,0.14563770355402353,hard
+B.Forst.1114,Forstgenetik,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[3],Written,none,['I.2.a.IV.2.b'],[],3.17,0.18042168674698794,hard
+B.Forst.1128,Morphologie & Systematik der Waldpflanzen,9,19.285714285714285,42.0,228.0,"{'all': [], 'any': []}",[],S,2.0,"[1, 2]",Written,none,['I.2.a.IV.2.a'],[],3.0615,0.11424429140993114,hard
+B.Geg.01,Einführung in die Geographie,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,[],Portfolio,attendance,['I.2.a.III.2.a'],[],2.294,0.029166666666666667,easy
+B.Geg.02,Regionale Geographie,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],N,2,[],Written,none,['I.2.a.III.2.a'],[],1.7295,0.0,easy
+B.Geg.03,Kartographie,6,12.857142857142858,42.0,138.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,attendance,['I.2.a.II.2.b'],[],3.5,0.2784653465346535,hard
+B.Geg.04,Geoinformatik,10,21.428571428571427,84.0,216.0,"{'all': [], 'any': []}",[],N,2.0,[],Report,attandance and <5 exercises,['I.2.a.II.2.b'],[],2.5875,0.07828282828282829,medium
+B.Geg.05,Relief und Boden,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],S,1.0,[],Written,attandance and <5 exercises,['I.2.a.III.2.b'],[],3.074,0.0992063492063492,medium
+B.Geg.06,Klima und Gewässer,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],W,1,[],Written,attendance,['I.2.a.III.2.b'],[],3.4775,0.2291886195995785,hard
+B.Geg.07,Kultur- und Sozialgeographie,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],W,1.0,[],Presentation,attendance,['I.2.a.III.2.b'],[],2.308,0.013636363636363636,easy
+B.Geg.08,Wirtschaftsgeographie,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],S,1.0,[],Written,active participation and presentation,['I.2.a.III.2.b'],[],2.4905,0.08868778280542987,medium
+B.Geg.11-2,Angewandte Geoinformatik,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}","['B.Geg.01', 'B.Geg.02', 'B.Geg.03', 'B.Geg.04']",W,1.0,[],Report,attendance,['I.2.a.II.2.b'],[],,,medium
+B.Inf.1101,Grundlagen der Informatik und Programmierung,10,21.428571428571427,84.0,216.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,40% on every excercise sheets,['I.1.a'],[],3.6725,0.42500000000000004,medium
+B.Inf.1102,Grundlagen der Praktischen Informatik,10,21.428571428571427,84.0,216.0,"{'all': [], 'any': []}",['B.Inf.1101'],S,1.0,[],Written,40% on every excercise sheets,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],3.3914999999999997,0.2593029350104822,medium
+B.Inf.1103,Algorithmen und Datenstrukturen,10,21.428571428571427,84.0,216.0,"{'all': [], 'any': []}",['B.Inf.1101'],W,1.0,[],Written,40% on every excercise sheets,['I.1.a'],[],2.9755000000000003,0.1736753574432296,medium
+B.Inf.1131,Data Science: Grundlagen,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,[2],Take-Home,none,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],1.866,0.10328947368421051,easy
+B.Inf.1132,Data Science: Numerische Methoden,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1,[3],Written,50% of exercise,"['I.2.a.VIII.1.a', 'I.2.a.VIII.1.c']",[],2.93,0.21346153846153845,medium
+B.Inf.1190,Bachelorabschlussmodul,12,25.714285714285715,42.0,408.0,"{'all': [], 'any': []}",[],E,1.0,[6],Bachelor Thesis,none,['I.3'],[],,,medium
+B.Inf.1201,Theoretische Informatik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],N,1.0,[],Written,50% of exercise,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],3.729,0.2685810810810811,hard
+B.Inf.1202,Formale Systeme,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",['B.Inf.1101'],N,1.0,[],Written,active participation,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],3.5940000000000003,0.26206140350877194,hard
+B.Inf.1203,Betriebssysteme,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': ['B.Inf.1801', 'B.Inf.1841', 'B.Phy.1601']}",['B.Inf.1101'],N,1,[],Written,presentation of one exercise,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],4.152,0.3307692307692308,hard
+B.Inf.1204,Telematics / Computer Networks,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1801']",N,1.0,[],Written,none,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],2.5265,0.05378753922008068,easy
+B.Inf.1206,Datenbanken,5,10.714285714285714,56.0,94.0,"{'all': [], 'any': []}",['B.Inf.1101'],N,1.0,[],Written,none,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],3.2605000000000004,0.2990543735224586,hard
+B.Inf.1207,Proseminar I,5,10.714285714285714,42.0,108.0,"{'all': ['B.Inf.1101'], 'any': []}",[],E,1.0,[],Presentation,attendance,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1208,Proseminar II,5,10.714285714285714,42.0,108.0,"{'all': ['B.Inf.1101'], 'any': []}",[],E,1.0,[],Presentation,attendance,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1209,Softwaretechnik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1801', 'B.Inf.1802']",N,1.0,[],Written,presentation of one exercise,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],3.3525,0.2267741935483871,hard
+B.Inf.1210,Computersicherheit und Privatheit,5,10.714285714285714,56.0,94.0,"{'all': [], 'any': []}",[],S,1.0,[],Written,attendance,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],3.2965,0.34584897788902796,hard
+B.Inf.1211,Sensordatenverarbeitung,5,10.714285714285714,56.0,94.0,"{'all': [], 'any': []}",[],N,1.0,[],Written,attendance,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],2.202,0.07882352941176471,easy
+B.Inf.1212,Technische Informatik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1801']",W,1.0,[],Written,50% of exercise,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],3.5915,0.3024193548387097,hard
+B.Inf.1214,Types and Programming Languages,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],S,1,[],Written,50% of exercise,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],,,medium
+B.Inf.1215,Compiler Construction,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,50% of exercise,"['I.1.c.aa', 'I.2.a.XI.2.b']",[],,,medium
+B.Inf.1216,Compiler Lab,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': ['B.Inf.1215']}",[],W,1.0,[],Project,none,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],,,easy
+B.Inf.1236,Machine Learning,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,[4],Written,50% of exercises and present n-1 times,"['I.1.c.aa', 'I.2.a.IX.1.b', 'I.2.a.XI.2.b']",[],2.763,0.05668449197860963,medium
+B.Inf.1237,Deep Learning for Computer Vision,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[5],Written,50% of exercises and present n-1 times,"['I.2.a.IX.1.b', 'I.2.a.XI.2.b']",[],2.7325,0.14486703772418058,medium
+B.Inf.1240,Visualization,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],N,1.0,"[3, 4, 5, 6]",Project,50% of exercise,"['I.1.c.bb', 'I.2.a.VIII.1.c', 'I.2.a.XI.2.b']",[],1.656,0.018140589569160995,easy
+B.Inf.1241,Computational Optimal Transport,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],N,1.0,"[4, 5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.XI.2.b']",[],2.3275,0.1575757575757576,medium
+B.Inf.1248,Language as Data,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],N,1.0,[],Written,completion of exercise,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],2.2285,0.0837245696400626,easy
+B.Inf.1249,Introduction to Robotics,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,50% of exercises and present n-1 times,"['I.1.c.bb', 'I.2.a.XI.2.b']",[],,,medium
+B.Inf.1301,Grundlagen der Medizinischen Informatik,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],N,1.0,"[2, 3, 4, 5, 6]",Written,attandance and <5 exercises,['I.2.a.V.1.a'],[],2.7005,0.06066176470588235,medium
+B.Inf.1302,Biosignalverarbeitung,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],N,1.0,"[3, 4, 5, 6]",Written,50% of exercise,"['I.2.a.V.1.a', 'I.2.a.IX.1.b']",[],2.176,0.0,easy
+B.Inf.1304,IT-Projekte,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],N,2.0,"[4, 5, 6]",Written,attendance,['I.2.a.V.1.b'],[],,,easy
+B.Inf.1301,Grundlagen der Medizinischen Informatik sowie am Teilmodul B.Inf.1351.1: Grundlagen der Biomedizin I wird empfohlen.,7,15.0,42.0,168.0,"{'all': [], 'any': []}",[],S,1.0,"[4, 5, 6]",Paper,none,['I.2.a.V.1.a'],[],2.7005,0.06066176470588235,easy
+B.Inf.1351,Grundlagen der Biomedizin,2,4.285714285714286,70.0,170.0,"{'all': [], 'any': []}",[],E,3.0,"[3, 4, 5, 6]",Presentation,attendance,['I.2.a.V.2.a'],[],,,easy
+B.Inf.1352,Organisation im Gesundheitswesen,8,17.142857142857142,70.0,170.0,"{'all': [], 'any': []}",[],N,1.0,"[2, 3, 4, 5, 6]",Written,attandance and <5 exercises,['I.2.a.V.2.a'],[],2.9,0.1,medium
+B.Inf.1353,Aktuelle Themen im Gesundheitswesen,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1301', 'B.Inf.1305', 'B.Inf.1351', 'B.Inf.1352']",N,1.0,"[4, 5, 6]",Presentation,attendance,['I.2.a.V.2.b'],[],3.1,0.15000000000000002,hard
+B.Inf.1354,Anwendungssysteme im Gesundheitswesen,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],S,1.0,"[2, 3, 4, 5, 6]",Written,attendance,['I.2.a.V.2.b'],[],2.12,0.0,easy
+B.Inf.1502,Biologische Datenbanken,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Report,none,['I.2.a.II.1.a'],[],1.7715,0.0,easy
+B.Inf.1503,Proseminar Bioinformatik,5,10.714285714285714,28.0,122.0,"{'all': [], 'any': []}",[],N,1.0,"[3, 4, 5]",Presentation,none,['I.2.a.II.1.b'],[],,,easy
+B.Inf.1504,Maschinelles Lernen in der Bioinformatik,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Oral,attandance and <5 exercises,['I.2.a.II.1.a'],[],,,easy
+B.Inf.1701,Vertiefung theoretischer Konzepte der Informatik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1201', 'B.Inf.1202']",N,1.0,[],Written,none,['I.2.a.XI.2.b'],[],2.151,0.05,easy
+B.Inf.1704,Vertiefung technischer Konzepte der Informatik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",['B.Inf.1212'],N,1.0,[],Written,none,['I.2.a.XI.2.b'],[],2.429,0.07142857142857142,easy
+B.Inf.1705,Vertiefung Softwaretechnik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1209']",N,1.0,[],Written,presentation of one exercise,['I.2.a.XI.2.b'],[],,,medium
+B.Inf.1706,Vertiefung Datenbanken,6,12.857142857142858,56.0,124.0,"{'all': ['B.Inf.1206'], 'any': []}",[],N,1.0,[],Written,none,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1707,Advanced Computernetworks,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1204']",N,1.0,[],Written,presentation of one exercise,['I.2.a.XI.2.b'],[],,,medium
+B.Inf.1709,Vertiefung Algorithmen und Datenstrukturen,5,10.714285714285714,56.0,94.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1103']",N,1.0,[],Oral,none,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1710,Vertiefung Computersicherheit und Privatheit,5,10.714285714285714,56.0,94.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1210']",N,1.0,[],Written,none,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1711,Vertiefung Sensordatenverarbeitung,5,10.714285714285714,56.0,94.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1211']",N,1.0,[],Written,none,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1712,Vertiefung Hochleistungsrechnen,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,none,"['I.2.a.VIII.1.c', 'I.2.a.XI.2.b']",[],,,easy
+B.Inf.1713,Vertiefung Data Science,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],N,1.0,[],Written,active participation and presentation,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1714,Vertiefung Praktische Informatik,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],N,1.0,[],Written,none,['I.2.a.XI.2.b'],[],,,easy
+B.Inf.1801,Programmierkurs,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.b.aa'],[],1.0,0.4025487256371814,easy
+B.Inf.1802,Programmierpraktikum,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Inf.1801'],S,1.0,[],Oral,40% on every excercise sheets,['I.2.b.aa'],[],1.697,0.0,medium
+B.Inf.1803,Fachpraktikum I,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],E,1.0,[],Oral,completion of exercise,['I.2.b.aa'],[],1.0,0.038461538461538464,easy
+B.Inf.1804,Fachpraktikum II,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],E,1.0,[],Oral,completion of exercise,"['I.2.b.bb', 'I.2.a.XI.2.a']",[],1.0,0.0,easy
+B.Inf.1805,Fachpraktikum III,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],E,1.0,[],Oral,completion of exercise,"['I.2.b.bb', 'I.2.a.XI.2.a']",[],1.0,0.0,easy
+B.Inf.1806,Externes Praktikum I,5,10.714285714285714,0.0,150.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1102', 'B.Inf.1802']",E,1.0,[],Report,none,"['I.2.b.bb', 'I.2.a.XI.2.b']",[],,,easy
+B.Inf.1807,Externes Praktikum II,5,10.714285714285714,0.0,150.0,"{'all': [], 'any': []}","['B.Inf.1101', 'B.Inf.1102', 'B.Inf.1801', 'B.Inf.1802']",E,1.0,[],Report,none,"['I.2.b.bb', 'I.2.a.XI.2.b']",[],,,easy
+B.Inf.1808,Anwendungsorientierte Systementwicklung im forschungsbezogenen Praktikum,5,10.714285714285714,7.0,143.0,"{'all': [], 'any': []}",[],E,1.0,[],Report,none,['I.2.a.XI.2.a'],[],,,easy
+B.Inf.1809,Vertiefte anwendungsorientierte Systementwicklung im forschungsbezogenen Praktikum,10,21.428571428571427,14.0,286.0,"{'all': [], 'any': []}",[],E,1.0,[],Report,none,['I.2.a.XI.2.a'],[],,,medium
+B.Inf.1810,Angewandte Informatik im forschungsbezogenen Praktikum,5,10.714285714285714,7.0,143.0,"{'all': ['B.Inf.1101', 'B.Inf.1102', 'B.Inf.1801'], 'any': []}",[],E,1.0,[],Report,none,"['I.2.a.II.1.b', 'I.2.a.IV.1.b', 'I.2.a.V.1.b', 'I.2.a.VI.1.b', 'I.2.a.VII.1.b', 'I.2.a.VIII.1.c', 'I.2.a.IX.1.b']",[],,,easy
+B.Inf.1811,Vertiefte Angewandte Informatik im forschungsbezogenen Praktikum,10,21.428571428571427,14.0,286.0,"{'all': ['B.Inf.1101', 'B.Inf.1102', 'B.Inf.1801'], 'any': []}",[],E,1.0,[],Report,none,"['I.2.a.II.1.b', 'I.2.a.IV.1.b', 'I.2.a.V.1.b', 'I.2.a.VII.1.b', 'I.2.a.VIII.1.c', 'I.2.a.IX.1.b']",[],,,medium
+B.Inf.1812,Anwendungsbereich im forschungsbezogenen Praktikum,5,10.714285714285714,7.0,143.0,"{'all': ['B.Inf.1101', 'B.Inf.1102', 'B.Inf.1801'], 'any': []}",[],E,1.0,[],Report,none,"['I.2.a.II.2.b', 'I.2.a.V.2.b', 'I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],,,easy
+B.Inf.1831,"Ethische, gesellschaftliche und rechtliche Grundlagen für Data Science",3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],N,1.0,[1],Paper,none,['I.2.b.bb'],[],2.4354999999999998,0.17045454545454547,easy
+B.Inf.1842,Programmieren für Data Scientists: Python,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],E,1.0,[1],Project,65% of excercise,['I.2.b.bb'],[],1.0,0.08993115318416522,easy
+B.Inf.1852,Proseminar Datenanalyse,5,10.714285714285714,42.0,108.0,"{'all': ['B.Inf.1101'], 'any': []}",[],E,1.0,[],Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.0011,Analysis I,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],W,1.0,"[1, 2, 3]",Written,50% of exercise,['I.1.b.ii'],[],3.4175,0.2748655913978495,medium
+B.Mat.0012,Analytische Geometrie und Lineare Algebra I,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],W,1.0,"[1, 2, 3]",Written,50% of exercise,['I.1.b.ii'],[],4.1535,0.5587602238484718,hard
+B.Mat.0021,Analysis II,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}","['B.Mat.0011', 'B.Mat.0012']",S,1.0,"[2, 3, 4]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.IX.2.b', 'I.2.a.IX.2.b']",[],3.2115,0.18681318681318682,medium
+B.Mat.0022,Analytische Geometrie und Lineare Algebra II,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}","['B.Mat.0011', 'B.Mat.0012']",S,1.0,"[2, 3, 4]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],2.8369999999999997,0.24285714285714285,medium
+B.Mat.0024,Elementare Wahrscheinlichkeitsrechnung und statistische Datenanalyse,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0011', 'B.Mat.0012']",S,1.0,"[2, 3, 4, 5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.a', 'I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],,,medium
+B.Mat.0721,Mathematisch orientiertes Programmieren,6,12.857142857142858,42.0,138.0,"{'all': [], 'any': []}","['B.Mat.0011', 'B.Mat.0012']",E,1.0,"[1, 2, 3, 4, 5, 6]",Written,none,['I.2.b.bb'],[],3.3914999999999997,0.3611111111111111,hard
+B.Mat.0733,Practical course in scientific computing: Extensions,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}","['B.Mat.0732', 'B.Mat.1013']",E,1.0,"[4, 5, 6]",Portfolio,none,['I.2.a.VIII.1.b'],[],,,medium
+B.Mat.0736,Practical course in scientific computing: Advanced extensions,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}","['B.Mat.0732', 'B.Mat.1013']",E,1.0,"[4, 5, 6]",Portfolio,presentation,['I.2.a.VIII.1.b'],[],,,medium
+B.Mat.0739,Practical course in scientific computing in the context of a research project or a business project,9,19.285714285714285,28.0,224.0,"{'all': [], 'any': []}","['B.Mat.0732', 'B.Mat.1013']",E,1.0,"[4, 5, 6]",Portfolio,presentation,['I.2.a.VIII.1.b'],[],,,medium
+B.Mat.0831,Mathematik für Studierende der Physik I,12,25.714285714285715,140.0,220.0,"{'all': [], 'any': []}",[],W,1.0,"[1, 2, 3]",Written,none,['I.1.b.ii.iii'],[],3.3520000000000003,0.15652768284347232,medium
+B.Mat.0832,Mathematik für Studierende der Physik II,12,25.714285714285715,112.0,248.0,"{'all': [], 'any': []}",['B.Mat.0831'],S,1.0,"[2, 3, 4]",Written,50% of exercise and present twice,['I.1.b.ii.iii'],[],3.186,0.14285714285714285,medium
+B.Mat.0841,Mathematik für Informationswissenschaften I,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],W,1.0,"[1, 2, 3]",Written,50% of exercise and present twice,['I.1.b.aa.i'],[],,,medium
+B.Mat.0842,Mathematik für Informationswissenschaften II,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.0841'],S,1.0,"[1, 2, 3]",Written,50% of exercise and present twice,['I.1.b.aa.i'],[],,,medium
+B.Mat.0843,Diskrete Stochastik für Informationswissenschaften,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}","['B.Mat.0841', 'B.Mat.0842']",W,1.0,"[1, 2, 3]",Written,50% of exercise and present twice,['I.1.b.bb'],[],3.171,0.1856060606060606,medium
+B.Mat.0922,Mathematics information services and electronic publishing,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],S,1.0,"[1, 2, 3, 4, 5, 6]",Written,attendance,['I.2.b.bb'],[],1.0,0.0,easy
+B.Mat.1011,Funktionentheorie,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022']",W,1.0,"[3, 4, 5]",Portfolio,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],3.2569999999999997,0.26373626373626374,medium
+B.Mat.1012,Algebra I,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022']",W,1.0,"[3, 4, 5]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.1013,Numerik und Optimierung I,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022', 'B.Mat.0721']",W,1.0,"[3, 4, 5]",Portfolio,50% of exercise,"['I.2.a.VIII.1.a', 'I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],,,medium
+B.Mat.1014,Maß- und Wahrscheinlichkeitstheorie,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022', 'B.Mat.0024']",W,1.0,"[3, 4, 5]",Written,50% of exercise,"['I.1.b.bb', 'I.2.a.VIII.1.c']",[],3.6174999999999997,0.35,medium
+B.Mat.1021,Funktionalanalysis,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1011'],S,1.0,"[4, 5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],3.0515,0.15,medium
+B.Mat.1022,Algebra II,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1012'],S,1,"[4, 5, 6]",Portfolio,50% of exercise,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.1023,Numerik und Optimierung II,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1013'],S,1.0,"[4, 5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],,,medium
+B.Mat.1024,Stochastik,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1014'],S,1.0,"[4, 5, 6]",Portfolio,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],2.0095,0.09090909090909091,medium
+B.Mat.2210,Zahlentheorie,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022']",S,1.0,"[4, 5, 6]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],3.3055,0.39583333333333337,medium
+B.Mat.2220,Diskrete Mathematik,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}","['B.Mat.0011', 'B.Mat.0012']",S,1.0,"[2, 3, 4, 5, 6]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],3.2535,0.30000000000000004,medium
+B.Mat.3010,Analysis on manifolds,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022']",S,1.0,"[5, 6]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3011,Functional analysis and spectral theory,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022', 'B.Mat.1021']",W,1,"[5, 6]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3012,Introduction to topology,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}","['B.Mat.0021', 'B.Mat.0022', 'B.Mat.1021']",W,1.0,"[5, 6]",Written,50% of exercise,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3030,Numerical linear algebra for data science,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1023'],W,1,"[5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.IX.2.b']",[],,,medium
+B.Mat.3031,Wissenschaftliches Rechnen,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1023'],N,1.0,"[4, 5, 6]",Oral,active participation and presentation,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3032,Numerics of ordinary differential equations,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1023'],N,1.0,"[5, 6]",Written,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3033,Numerical and applied mathematics,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1023'],N,1.0,[6],Written,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3040,Statistical theory of deep learning,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",['B.Mat.1024'],N,1.0,"[4, 5, 6]",Oral,none,['I.2.a.IX.2.b'],[],,,medium
+B.Mat.3131,Introduction to inverse problems,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[5, 6]",Written,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.6724999999999999,0.03571428571428571,medium
+B.Mat.3132,Introduction to approximation methods,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[5, 6]",Written Or Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],2.3145,0.15714285714285714,medium
+B.Mat.3133,Introduction to numerics of partial differential equations,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[5, 6]",Written Or Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],2.287,0.13333333333333333,medium
+B.Mat.3134,Introduction to optimisation,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[5, 6]",Written Or Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.8984999999999999,0.06521739130434782,medium
+B.Mat.3137,Introduction to variational analysis,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[5, 6]",Written Or Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.48,0.0,medium
+B.Mat.3139,Introduction to scientific computing / applied mathematics,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[5, 6]",Written,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.873,0.0,medium
+B.Mat.3230,"Proseminar ""Numerische und Angewandte Mathematik""",3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[4, 5, 6]",Presentation,attendance,"['I.2.a.VIII.1.c', 'I.2.a.VIII.1.c']",[],1.6965,0.045454545454545456,easy
+B.Mat.3239,"Proseminar im Zyklus ""Wissenschaftliches Rechnen / Angewandte Mathematik""",3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.1300'],N,1.0,"[4, 5, 6]",Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3331,Advances in inverse problems,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3131'],N,1.0,[6],Oral,none,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3332,Advances in approximation methods,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3132'],N,1.0,[6],Oral,none,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3333,Advances in numerics of partial differential equations,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3133'],N,1.0,[6],Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],,,medium
+B.Mat.3334,Advances in optimisation,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3134'],N,1.0,[6],Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],2.1585,0.05277777777777778,medium
+B.Mat.3337,Advances in variational analysis,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3137'],N,1.0,[6],Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.414,0.0,medium
+B.Mat.3338,Advances in image and geometry processing,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3138'],N,1.0,[6],Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.2985000000000002,0.0,medium
+B.Mat.3339,Advances in scientific computing / applied mathematics,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",['B.Mat.3139'],N,1.0,[6],Oral,50% of exercise and present twice,['I.2.a.VIII.1.c'],[],1.769,0.0,medium
+B.Mat.3431,Seminar on inverse problems,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3131'],N,1.0,"[5, 6]",Presentation,none,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3432,Seminar on approximation methods,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3132'],N,1.0,"[5, 6]",Presentation,none,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3433,Seminar on numerics of partial differential equations,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3133'],N,1.0,"[5, 6]",Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3434,Seminar on optimisation,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3134'],N,1.0,"[5, 6]",Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3437,Seminar on variational analysis,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3137'],N,1.0,"[5, 6]",Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3438,Seminar on image and geometry processing,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3138'],N,1.0,"[5, 6]",Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Mat.3439,Seminar on scientific computing / applied mathematics,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",['B.Mat.3139'],N,1.0,"[5, 6]",Presentation,attendance,['I.2.a.VIII.1.c'],[],,,easy
+B.Phy-NF.7006,Experimentalphysik III - Wellen und Optik für Studierende der Mathematik,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],W,1.0,[3],Written,50% of exercise,['I.2.a.X.3.c'],[],,,medium
+B.Phy-NF.7007,Experimentalphysik IV - Atom- und Quantenphysik für Studierende der Mathematik,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],S,1.0,[4],Written,50% of exercise,['I.2.a.X.3.c'],[],,,medium
+B.Phy.1101,Experimentalphysik I - Mechanik (mit Praktikum),9,19.285714285714285,126.0,144.0,"{'all': [], 'any': []}",[],W,1.0,[1],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.a']",[],3.575,0.28824289405684755,medium
+B.Phy.1102,Experimentalphysik II - Elektromagnetismus (mit Praktikum),9,19.285714285714285,126.0,144.0,"{'all': [], 'any': []}",[],S,1.0,[2],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.a']",[],2.065,0.08152958152958152,medium
+B.Phy.1103,Experimentalphysik III - Wellen und Optik (mit Praktikum),9,19.285714285714285,126.0,144.0,"{'all': [], 'any': []}",[],W,1.0,[3],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.2215,0.10537790697674418,medium
+B.Phy.1104,Experimentalphysik IV - Atom- und Quantenphysik (mit Praktikum),9,19.285714285714285,126.0,144.0,"{'all': [], 'any': []}",[],S,1.0,[4],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.8194999999999997,0.12962962962962962,medium
+B.Phy.1201,Analytische Mechanik,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],S,1.0,[2],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.b']",[],2.7275,0.15674603174603174,medium
+B.Phy.1202,Klassische Feldtheorie,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],W,1.0,[3],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.b']",[],2.8064999999999998,0.15357142857142858,medium
+B.Phy.1203,Quantenmechanik I,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],S,1.0,[4],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.b']",[],2.9255,0.21532091097308487,medium
+B.Phy.1204,Statistische Physik,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],W,1.0,[5],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.872,0.1569023569023569,medium
+B.Phy.1301,Rechenmethoden der Physik,6,12.857142857142858,112.0,68.0,"{'all': [], 'any': []}",[],W,1.0,[1],Exercise Sheets,none,['I.2.a.IX.2.b'],[],1.0,0.37931034482758624,easy
+B.Phy.1511,Einführung in die Kern- und Teilchenphysik,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],3.6449999999999996,0.3625,hard
+B.Phy.1521,Einführung in die Festkörperphysik,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],3.0645,0.11764705882352941,medium
+B.Phy.1531,Introduction to Materials Physics,4,8.571428571428571,56.0,64.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written Or Oral,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],1.267,0.0,easy
+B.Phy.1541,Einführung in die Geophysik,4,8.571428571428571,42.0,78.0,"{'all': [], 'any': []}",[],S,1.0,[6],Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.193,0.041666666666666664,easy
+B.Phy.1551,Introduction to Astrophysics,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Oral,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.7695,0.029411764705882353,medium
+B.Phy.1561,Introduction to Physics of Complex Systems,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.2355,0.0,easy
+B.Phy.1571,Introduction to Biophysics,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,50% of exercise,"['I.2.a.VIII.1.c', 'I.2.a.X.3.c']",[],2.6595000000000004,0.10025062656641603,medium
+B.Phy.1602,Computergestütztes wissenschaftliches Rechnen,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],S,1.0,[4],Report,<5 solved exercises,"['I.2.a.VIII.1.c', 'I.2.a.X.2.a']",[],1.481,0.0078125,easy
+B.Phy.1604,Projektpraktikum,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],S,1.0,[4],Presentation,none,['I.2.a.X.3.c'],[],1.069,0.0,easy
+B.Phy.2101,Experimentalphysik I: Mechanik und Thermodynamik,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],W,1.0,[1],Written,50% of exercise,['I.2.a.X.3.a'],[],3.989,0.30833333333333335,hard
+B.Phy.2102,Experimentalphysik II: Elektromagnetismus,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}","['B.Phy.2101', 'B.Phy.1301']",S,1.0,[2],Written,50% of exercise,['I.2.a.X.3.a'],[],3.2685000000000004,0.17914438502673796,medium
+B.Phy.2201,Theorie I: Mechanik und Quantenmechanik,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}","['B.Phy.2101', 'B.Phy.1301']",W,1.0,[3],Written,50% of exercise,['I.2.a.X.3.b'],[],2.945,0.10526315789473684,medium
+B.Phy.2202,Theorie II: Elektrodynamik und Statistische Mechanik,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}","['B.Phy.2201', 'B.Phy.2102', 'B.Phy.2103']",S,1.0,[4],Written,50% of exercise,['I.2.a.X.3.b'],[],3.6155,0.28708133971291866,medium
+B.Phy.409,Einführung ins wissenschaftliche Arbeiten: Computational Physics,6,12.857142857142858,0.0,180.0,"{'all': [], 'any': []}",[],E,1.0,"[5, 6]",Report,none,['I.2.a.X.2.a'],[],,,easy
+B.Phy.5605,Computational Neuroscience: Basics,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],S,1.0,"[2, 3, 4, 5, 6]",Written,none,['I.2.a.IX.1.a'],[],2.6795,0.24358974358974358,hard
+B.Phy.5614,Proseminar Computational Neuroscience,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",['B.Phy.5605'],E,1.0,"[4, 5, 6]",Presentation,none,['I.2.a.IX.1.a'],[],1.9260000000000002,0.07179487179487179,easy
+B.Phy.5624,Introduction to Theoretical Neuroscience,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],S,1.0,"[4, 5, 6]",Project,active participation,['I.2.a.IX.2.b'],[],,,easy
+B.Phy.5676,Computer Vision and Robotics,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Report,none,['I.2.a.IX.1.b'],"['B.Phy.5667', 'B.Phy.5668']",2.16,0.0,easy
+B.Phy.5721,Information and Physics,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],N,1.0,[6],Written,none,['I.2.a.X.3.c'],[],1.742,0.038461538461538464,easy
+B.Phy.8001,Lecture Series in Physics for Data Scientists,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],S,1.0,"[1, 2, 3, 4]",Oral,50% of exercise,['I.2.a.X.2.b'],[],,,medium
+B.Phy.8201,Angewandte Informatik in der Physik I,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],N,1.0,"[5, 6]",Written,none,['I.2.a.X.2.b'],[],,,easy
+B.Phy.8202,Angewandte Informatik in der Physik II,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],N,1.0,"[5, 6]",Written,none,['I.2.a.X.2.b'],[],,,easy
+B.Phy.8203,Seminar zur Angewandten Informatik in der Physik,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],N,1.0,"[5, 6]",Presentation,active participation,['I.2.a.X.2.b'],[],,,easy
+B.WIWI-BWL.0002,Interne Unternehmensrechnung,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4]",Written,none,['I.2.a.VII.2.b'],[],3.4299999999999997,0.2786172161172161,hard
+B.WIWI-BWL.0003,Unternehmensführung und Organisation,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4]",Written,none,['I.2.a.VII.2.b'],[],2.8760000000000003,0.10078191398946115,easy
+B.WIWI-BWL.0004,Produktion und Logistik,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4, 5]",Written,none,['I.2.a.VII.2.a'],[],2.8994999999999997,0.11549570281313107,easy
+B.WIWI-BWL.0005,Marketing,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],E,1.0,"[3, 4]",Written,none,['I.2.a.VII.2.a'],[],2.944,0.08714106218013545,easy
+B.WIWI-OPH.0001,Unternehmen und Märkte,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],E,1.0,[1],Written,active participation,['I.2.a.VII.2.a'],[],1.0,0.0,easy
+B.WIWI-OPH.0003,Grundlagen der Digitalisierung und Digitalen Transformation,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],E,1.0,"[1, 2]",Written,none,['I.2.a.VII.1.b'],[],3.57,0.28773978315262716,hard
+B.WIWI-OPH.0004,Finanzwirtschaft des Unternehmens,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],E,1.0,"[1, 2]",Written,none,['I.2.a.VII.2.b'],[],3.374,0.1942278287461774,hard
+B.WIWI-OPH.0005,Jahresabschluss,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],E,1.0,"[1, 2]",Written,none,['I.2.a.VII.2.b'],[],3.6935000000000002,0.3663827789699571,hard
+B.WIWI-OPH.0009,Recht,8,17.142857142857142,84.0,156.0,"{'all': [], 'any': []}",[],E,1.0,"[1, 2]",Written,none,['I.2.a.VI.2.a'],[],2.9225000000000003,0.12384640738299274,hard
+B.WIWI-QMW.0011,Data Science: Statistik,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],S,1.0,[2],Written,none,['I.2.a.XI.2.b'],[],3.4545,0.23897058823529413,hard
+B.WIWI-WIN.0001,Enterprise Architecture und Prozessmodellierung,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Written,completion of exercise,['I.2.a.VII.1.a'],[],3.0835,0.12478632478632479,medium
+B.WIWI-WIN.0002,Management der Informationswirtschaft,6,12.857142857142858,84.0,96.0,"{'all': [], 'any': []}",[],E,1.0,[3],Written,none,['I.2.a.VII.1.a'],[],3.455,0.27051282051282055,hard
+B.WIWI-WIN.0004,Informationsverarbeitung in Dienstleistungsbetrieben,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5, 6]",Written,<5 solved exercises,['I.2.a.VII.1.b'],[],3.3475,0.17207792207792205,hard
+B.WIWI-WIN.0005,Projektseminar zur Systementwicklung - Entwicklung von Web-Applikationen,12,25.714285714285715,42.0,318.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5, 6]",Paper,<5 solved exercises,['I.2.a.VII.1.b'],[],1.8575,0.0,medium
+B.WIWI-WIN.0007,SAP-Blockschulung,3,6.428571428571429,14.0,76.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4, 5, 6]",Written,none,['I.2.a.VII.1.b'],[],2.802,0.24342105263157893,hard
+B.WIWI-WIN.0010,Informationsverarbeitung in Industriebetrieben,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4, 5, 6]",Written,none,['I.2.a.VII.1.b'],[],3.9245,0.445,hard
+B.WIWI-WIN.0015,Geschäftsprozesse und Informationstechnologie,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5, 6]",Written,none,['I.2.a.VII.1.b'],[],2.2760000000000002,0.02631578947368421,easy
+B.WIWI-WIN.0021,Modellierung betrieblicher Informationssysteme,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4, 5, 6]",Written,none,['I.2.a.VII.1.b'],[],2.963,0.13703703703703704,easy
+B.WIWI-WIN.0022,Digital Business,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],S,1,"[3, 4, 5, 6]",Written,none,['I.2.a.VII.1.b'],[],3.1375,0.1900871459694989,hard
+B.WIWI-WIN.0023,Projektseminar zur Systementwicklung - Entwicklung von mobilen Anwendungen,12,25.714285714285715,42.0,318.0,"{'all': [], 'any': []}",[],S,1.0,"[3, 4, 5, 6]",Paper,attendance,['I.2.a.VII.1.b'],[],1.742,0.03225806451612903,medium
+B.WIWI-WIN.0027,Seminar zu Themen der Wirtschaftsinformatik und BWL,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],E,1.0,"[3, 4, 5]",Paper,attendance,['I.2.a.VII.1.a'],[],2.2035,0.08518518518518518,easy
+B.WIWI-WIN.0032,Electronic Commerce,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Written,none,['I.2.a.VII.1.b'],[],3.2395,0.3027644230769231,hard
+B.WIWI-WIN.0035,"Gründe dein Digitales Startup – Planen, Pitchen, Realisieren",6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Presentation,attendance,['I.2.a.VII.1.b'],[],1.5915,0.0,easy
+B.iPAB.0014,Data Analysis with R,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],E,1.0,[],Written,none,[],[],,,easy
+M.FES.115,Statistical Data Analysis with R,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],W,1.0,[],Presentation,none,['I.2.a.IV.1.a'],[],1.7109999999999999,0.03333333333333333,easy
+M.Forst.221,Fernerkundung und GIS,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],S,1.0,[],Written,none,['I.2.a.IV.1.a'],relevant,1.6055000000000001,0.038461538461538464,easy
+S.RW.0112K,Grundkurs I im Bürgerlichen Recht,9,19.285714285714285,112.0,158.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.a'],[],4.0305,0.40944272445820434,hard
+S.RW.0113K,Grundkurs II im Bürgerlichen Recht,9,19.285714285714285,84.0,186.0,"{'all': [], 'any': []}",[],S,1.0,[],Written,none,['I.2.a.VI.2.b'],[],4.3165,0.532967032967033,hard
+S.RW.0115K,Grundkurs III im Bürgerlichen Recht,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.b'],[],4.1395,0.5526315789473684,hard
+S.RW.0211K,Staatsrecht I,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.b'],[],3.8689999999999998,0.4057734204793028,hard
+S.RW.0212K,Staatsrecht II,7,15.0,56.0,154.0,"{'all': [], 'any': []}",[],S,1.0,[],Written,none,['I.2.a.VI.2.b'],[],4.1515,0.49924242424242427,hard
+S.RW.0311K,Strafrecht I,8,17.142857142857142,98.0,142.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.c'],[],4.423,0.6346153846153846,hard
+S.RW.1132,Wettbewerbsrecht (UWG),6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,[],Oral,none,['I.2.a.VI.1.b'],[],1.8010000000000002,0.0,easy
+S.RW.1136,Wirtschaftsrecht der Medien,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],1.7725,0.0,easy
+S.RW.1137,Immaterialgüterrecht II (Gewerbliche Schutzrechte),6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,"[5, 6]",Oral,none,['I.2.a.VI.1.a'],[],,,easy
+S.RW.1139,Immaterialgüterrecht I (Urheberrecht),6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],,,easy
+S.RW.1140,Jugendmedienschutzrecht,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],,,easy
+S.RW.1142,Kartellrecht,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,[],Oral,none,['I.2.a.VI.1.b'],[],,,easy
+S.RW.1168,Introduction to European ICT and Media Law,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],,,easy
+S.RW.1172,Recht der Digitalisierung,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],S,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],,,easy
+S.RW.1223K,Verwaltungsrecht I,7,15.0,84.0,126.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.c'],[],4.2625,0.5125,hard
+S.RW.1231,Datenschutzrecht,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],E,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],2.34,0.0,easy
+S.RW.1233,Telekommunikationsrecht,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,[],Oral,none,['I.2.a.VI.1.a'],[],,,easy
+S.RW.1317,Kriminologie I,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],W,1.0,[],Oral,none,['I.2.a.VI.2.c'],[],2.4320000000000004,0.030612244897959183,easy
+S.RW.1416K,Allgemeine Staatslehre,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.c'],[],3.742,0.3070588235294118,hard
+S.RW.1418K,Einführung in die Rechts- und Sozialphilosophie,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],W,1.0,[],Written,none,['I.2.a.VI.2.c'],[],2.55,0.1346749226006192,easy
+S.RW.1432K,Rechtssoziologie,4,8.571428571428571,28.0,92.0,"{'all': [], 'any': []}",[],S,1.0,[],Oral,none,['I.2.a.VI.2.c'],[],2.3935,0.06666666666666667,easy
+S.RW.4105,Legal Tech: mit digitaler Kompetenz zur Methodenkompetenz,6,12.857142857142858,28.0,152.0,"{'all': [], 'any': []}",[],E,1.0,[],Oral,none,['I.2.a.VI.1.b'],[],,,easy
+SK.Bio-NF.7001,Neurobiology,3,6.428571428571429,30.0,60.0,"{'all': [], 'any': []}",[],S,1.0,"[4, 5, 6]",Written,none,"['I.2.a.II.2.b', 'I.2.a.IX.2.a']",[],3.3674999999999997,0.20654761904761904,hard
+SK.Bio.305,Grundlagen der Biostatistik mit R,3,6.428571428571429,30.0,60.0,"{'all': [], 'any': []}",[],W,1.0,"[5, 6]",Written,attandance and <5 exercises,['I.2.a.II.1.c'],[],1.5619999999999998,0.0,easy
+SK.Bio.355,Biologische Psychologie I,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Written,none,"['I.2.a.II.2.b', 'I.2.a.IX.2.b']",[],3.3235,0.30893300248138955,hard
+SK.Bio.356,Biologische Psychologie II,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Written,none,"['I.2.a.II.2.b', 'I.2.a.IX.2.a']",['B.Bio.130'],2.6725000000000003,0.075,easy
+SK.Bio.357,Biologische Psychologie III,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],W,1.0,"[3, 4, 5]",Written,none,"['I.2.a.II.2.b', 'I.2.a.IX.2.b']",[],3.608,0.4166666666666667,hard
+SK.Inf.1801,Funktionale Programmierung,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",['B.Inf.1101'],S,1.0,"[5, 6]",Written,none,['I.2.b.bb'],[],1.0,0.0,easy
+SK.Inf.1803,Computer Science for Environmental Sustainability,5,10.714285714285714,28.0,122.0,"{'all': [], 'any': []}",[],E,1.0,[],Presentation,none,['I.2.b.bb'],[],,,easy
+SK.Inf.1804,KI Methoden im akademischen Alltag,5,10.714285714285714,42.0,108.0,"{'all': [], 'any': []}",[],E,1.0,[],Paper,attendance,['I.2.b.bb'],[],,,easy
+SK.Inf.1805,Dezentrale studentische Selbstverwaltung/ Gremienarbeit,3,6.428571428571429,0.0,0.0,"{'all': [], 'any': []}",[],E,0,[],Project,active participation,['I.2.b.bb'],[],,,easy
+SK.Inf.1806,Introduction into Web Development,6,12.857142857142858,56.0,124.0,"{'all': [], 'any': []}",[],N,1.0,"[3, 4, 5]",Project,none,['I.2.b.bb'],[],,,easy
+SK.Inf.1807,Projektarbeit - Erweiterung,3,6.428571428571429,7.0,83.0,"{'all': [], 'any': []}",[],E,1.0,[],Project,none,['I.2.b.bb'],[],,,easy
+SK.Inf.1821,Data Carpentry Ecology/Social Sciences,3,6.428571428571429,28.0,62.0,"{'all': [], 'any': []}",[],N,1.0,"[5, 6]",Presentation,attendance,['I.2.b.bb'],[],,,easy

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="wellness">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyPlanner – {{ title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script>
+(function(){try{var t=localStorage.getItem('sp-theme')||'wellness';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">SP</div>
+      <div><div class="brand-name">StudyPlanner</div><div class="brand-sub">Applied CS</div></div>
+    </div>
+    <a class="nav-link {{ 'active' if active=='home' }}" href="{{ url_for('home') }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Home</a>
+    <a class="nav-link {{ 'active' if active=='overview' }}" href="{{ url_for('overview') }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="7" height="7"/><rect x="14" y="4" width="7" height="7"/><rect x="3" y="15" width="7" height="7"/><rect x="14" y="15" width="7" height="7"/></svg>Full plan</a>
+    <a class="nav-link {{ 'active' if active=='plan' }}" href="{{ url_for('plan') }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Edit plan</a>
+    <a class="nav-link {{ 'active' if active=='stats' }}" href="{{ url_for('statistics') }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Statistics</a>
+    <a class="nav-link {{ 'active' if active=='help' }}" href="{{ url_for('help_page') }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 0c0 2-2.5 2-2.5 4"/><path d="M12 17h.01"/></svg>Help</a>
+    <a class="nav-link {{ 'active' if active=='profile' }}" href="{{ url_for('profile') }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Profile</a>
+    <div class="nav-spacer"></div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="page-title-top">{{ title }}</div>
+      <div class="top-spacer"></div>
+    </div>
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

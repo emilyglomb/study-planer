@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page active">
+  <div class="page-head">
+    <div class="eyebrow">Full plan</div>
+    <h1>Your whole study plan</h1>
+    <p class="muted">Every semester in your plan, start to finish.</p>
+  </div>
+
+  {% if not has_plan %}
+  <div class="empty card center" style="max-width:560px;margin:40px auto;padding:50px 24px;">
+    <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+    <h1 style="font-size:24px;">You don't have a study plan yet</h1>
+    <p class="muted" style="max-width:420px;margin:10px auto 22px;">Choose your specialization and modules — the planner automatically distributes them across your semesters.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('plan') }}">Create study plan</a>
+  </div>
+  {% else %}
+  <div class="grid g4" style="margin-bottom:22px;">
+    <div class="metric"><div class="lab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Total credits</div><div class="val">{{ total_credits }}<span style="font-size:15px;color:var(--muted);">/{{ total_target }}</span></div><div class="delta">{{ semesters|length }} semesters</div></div>
+  </div>
+
+  {% if plan_warnings %}
+  <div class="card" style="border-color:#e5484d; background:var(--bad-soft); margin-bottom:16px; padding:16px 20px;">
+    <div style="font-weight:700; color:var(--bad-strong); margin-bottom:8px;">The planner had to make {{ plan_warnings|length }} compromise(s) while building this plan:</div>
+    <ul style="margin:0; padding-left:20px; font-size:13px; line-height:1.7;">
+      {% for w in plan_warnings %}<li>{{ w }}</li>{% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% macro mod_row(m, sem_number, total_sem) %}
+  {% if m.view == 'retry_preview' %}
+  <div class="modrow">
+    <div class="tag">{{ m.tag }}</div>
+    <div>
+      <div class="nm">{{ m.name }} <span class="pill red" style="font-size:10px;padding:2px 7px;">{{ m.attempt_label }}</span></div>
+      <div class="meta">{{ m.id }} · retake pending - enter the new grade on the module's original semester card</div>
+    </div>
+    <div class="cr">{{ m.cr }}</div>
+  </div>
+  {% else %}
+  <input type="hidden" name="rows" value="{{ m.id }}">
+  <div class="modrow{% if m.status %} status-{{ m.status }}{% endif %}">
+    <div class="tag">{{ m.tag }}</div>
+    <div>
+      <div class="nm">{{ m.name }}{% if m.attempt_label %} <span class="pill red" style="font-size:10px;padding:2px 7px;">{{ m.attempt_label }}</span>{% endif %}</div>
+      <div class="meta">{{ m.id }} · {{ m.exam }} · {{ m.difficulty }}{% if m.status == 'failed' and m.retry_semester %} · not counted here · retake in semester {{ m.retry_semester }}{% endif %}</div>
+    </div>
+    <input type="text" name="grade_{{ m.id }}" value="{{ m.grade }}" placeholder="Grade" class="input" style="width:60px;padding:6px 8px;font-size:13px;">
+    <select class="input move-sem" style="width:auto;padding:6px 8px;font-size:12.5px;" data-current="{{ sem_number }}">
+      {% for n in range(1, total_sem + 1) %}
+      <option value="{{ n }}" {{ 'selected' if n == sem_number }}>Sem. {{ n }}</option>
+      {% endfor %}
+    </select>
+    <button type="button" class="btn btn-ghost move-btn" data-id="{{ m.id }}" style="padding:6px 10px;font-size:12.5px;">Move</button>
+    <div class="cr">{{ m.cr }}</div>
+  </div>
+  {% endif %}
+  {% endmacro %}
+
+  <form method="post" action="{{ url_for('mark_completed') }}">
+    <input type="hidden" name="return_to" value="overview">
+    <div class="grid" style="grid-template-columns:1fr; gap:18px;">
+      {% for sem in semesters %}
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <h3 style="font-size:18px;">Semester {{ sem.number }}</h3>
+          <span class="pill green">{{ sem.term }}</span>
+          <span class="cr" style="margin-left:auto;font-family:var(--font-head);font-weight:700;font-size:18px;">{{ sem.credits }} ECTS</span>
+        </div>
+        <p class="muted" style="font-size:13px;margin:0 0 14px;">{{ sem.modules|length }} modules in this semester</p>
+        {% for m in sem.modules %}{{ mod_row(m, sem.number, total_sem) }}{% endfor %}
+        {% if not sem.modules %}<p class="muted" style="font-size:13px;margin:0;">No modules assigned.</p>{% endif %}
+      </div>
+      {% endfor %}
+
+      {% if unassigned %}
+      <div class="card" style="border-color:#e5484d;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <h3 style="font-size:18px;">Not yet assigned</h3>
+          <span class="pill red">{{ unassigned|length }} module(s)</span>
+        </div>
+        <p class="muted" style="font-size:13px;margin:0 0 14px;">These are in your selection but the planner couldn't place them in a semester.</p>
+        {% for m in unassigned %}{{ mod_row(m, 1, total_sem) }}{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    <div style="margin-top:22px;">
+      <button class="btn btn-primary" type="submit">Save completion &amp; grades</button>
+      <a class="btn btn-ghost" href="{{ url_for('plan') }}">Edit plan</a>
+      <a class="btn btn-ghost" href="{{ url_for('statistics') }}">View statistics</a>
+    </div>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page active">
+  <div class="page-head">
+    <div class="eyebrow">Analysis</div>
+    <h1>Statistics of your study plan</h1>
+    <p class="muted">Metrics on workload, grades and risk across all semesters.</p>
+  </div>
+
+  {% if not s %}
+  <div class="empty card center" style="max-width:560px;margin:40px auto;padding:50px 24px;">
+    <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+    <h1 style="font-size:24px;">No statistics yet</h1>
+    <p class="muted" style="max-width:420px;margin:10px auto 22px;">Select modules and generate a plan first — your statistics will appear here.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('plan') }}">Go to plan</a>
+  </div>
+  {% else %}
+
+  <div class="grid g4" style="margin-bottom:22px;">
+    <div class="metric"><div class="lab">Total credits</div><div class="val">{{ s.credits_total }}</div><div class="delta">{{ s.modules }} modules</div></div>
+    <div class="metric"><div class="lab">Avg. grade</div><div class="val">{{ s.avg_grade }}</div><div class="delta">Median {{ s.median_grade }}</div></div>
+    <div class="metric"><div class="lab">Avg. failure rate</div><div class="val">{{ s.fail_mean }}%</div><div class="delta">Median {{ s.fail_median }}%</div></div>
+    <div class="metric"><div class="lab">Avg. difficulty</div><div class="val">{{ s.difficulty }}</div><div class="delta">0 easy – 2 hard</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Credits per semester</h3>
+      <div class="chart-box"><canvas id="chartCredits"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Workload per semester</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 16px;">Contact hours vs. self-study, hover a bar for the exact split.</p>
+      <div class="chart-box"><canvas id="chartWorkload"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Examination types</h3>
+      <div class="chart-box sm"><canvas id="chartExam"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Study area distribution</h3>
+      <div class="chart-box sm"><canvas id="chartAreas"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Grade trend</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 16px;">Average grade per semester (lower is better).</p>
+      <div class="chart-box"><canvas id="chartGrade"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Workload balance</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 16px;">Contact hours vs. self-study across the whole degree.</p>
+      <div class="donut-wrap">
+        <div style="width:128px;height:128px;border-radius:50%;background:conic-gradient(var(--accent) 0 {{ s.contact_pct }}%, var(--primary) {{ s.contact_pct }}% 100%);display:grid;place-items:center;">
+          <div style="width:78px;height:78px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-family:var(--font-head);font-weight:700;">{{ s.ratio }}</div>
+        </div>
+        <div>
+          <div style="margin-bottom:10px;"><span class="legend"><i style="background:var(--accent)"></i>Contact time · {{ s.contact_pct }}%</span></div>
+          <div><span class="legend"><i style="background:var(--primary)"></i>Self-study · {{ s.self_pct }}%</span></div>
+          <p class="muted" style="font-size:12px;margin:12px 0 0;">Avg. {{ s.avg_ects }} ECTS per module</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:18px;">
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Examination types per semester</h3>
+      <div class="chart-box"><canvas id="chartExamSem"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Study areas per semester</h3>
+      <div class="chart-box"><canvas id="chartAreaSem"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Module difficulty per semester</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 16px;">Number of modules of each difficulty, by semester.</p>
+      <div class="heat-grid" style="grid-template-columns:60px repeat({{ s.chart_data.sem_labels|length }}, 1fr);">
+        <div></div>
+        {% for lbl in s.chart_data.sem_labels %}<div class="heat-row-label" style="justify-content:center;">{{ lbl }}</div>{% endfor %}
+        {% for row in s.chart_data.diff_matrix %}
+        {% set diff_lbl = s.chart_data.diff_labels[loop.index0] %}
+        <div class="heat-row-label">{{ diff_lbl }}</div>
+        {% for v in row %}
+        <div class="heat-cell" style="background:color-mix(in srgb, var(--accent) {{ (v / s.chart_data.diff_max * 85)|round|int }}%, var(--surface-soft));" title="{{ diff_lbl }} · {{ s.chart_data.sem_labels[loop.index0] }}: {{ v }}">{{ v if v else '' }}</div>
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;margin-bottom:16px;">Difficulty vs. weekly workload</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 16px;">Each dot is one module - hover for name, workload and failure rate.</p>
+      <div class="chart-box"><canvas id="chartScatter"></canvas></div>
+    </div>
+  </div>
+
+  {% if s.network and s.network.nodes %}
+  <div class="card" style="margin-top:18px;">
+    <h3 style="font-size:16px;margin-bottom:6px;">Module dependency network</h3>
+    <p class="muted" style="font-size:13px;margin:0 0 16px;">Semesters top to bottom, study areas left to right. Lines connect a module to its recommended previous knowledge.</p>
+    <div class="net-wrap">
+      <svg viewBox="0 0 {{ s.network.width }} {{ s.network.height }}" width="100%" style="min-width:640px;display:block;">
+        {% for b in s.network.bands %}
+        <rect class="net-band" x="{{ b.x0 }}" y="0" width="{{ b.x1 - b.x0 }}" height="{{ s.network.height }}"></rect>
+        <text class="net-band-label" x="{{ (b.x0 + b.x1) / 2 }}" y="14" text-anchor="middle">{{ b.label }}</text>
+        {% endfor %}
+        {% for t in s.network.sem_ticks %}
+        <text class="net-sem-label" x="4" y="{{ t.y + 4 }}">{{ t.label }}</text>
+        {% endfor %}
+        {% for e in s.network.edges %}
+        <line class="net-edge" x1="{{ e.x1 }}" y1="{{ e.y1 }}" x2="{{ e.x2 }}" y2="{{ e.y2 }}"></line>
+        {% endfor %}
+        {% for n in s.network.nodes %}
+        <circle class="net-node diff-{{ n.diff }}" cx="{{ n.x }}" cy="{{ n.y }}" r="6"><title>{{ n.name }} ({{ n.id }})</title></circle>
+        {% endfor %}
+      </svg>
+    </div>
+    <div class="net-legend">
+      <span class="legend"><i style="background:var(--ok)"></i>Easy</span>
+      <span class="legend"><i style="background:var(--diff-medium)"></i>Medium</span>
+      <span class="legend"><i style="background:var(--bad)"></i>Hard</span>
+    </div>
+  </div>
+  {% endif %}
+
+  <script src="{{ url_for('static', filename='js/vendor/chart.umd.min.js') }}"></script>
+  <script>window.STATS_DATA = {{ s.chart_data|tojson }};</script>
+  <script src="{{ url_for('static', filename='js/stats.js') }}"></script>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page active">
+  <div class="page-head">
+    <div class="eyebrow">Account</div>
+    <h1>Profile</h1>
+    <p class="muted">Your details and preferences.</p>
+  </div>
+
+  <div class="grid" style="grid-template-columns:1fr 1.4fr;">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+        <div class="avatar" style="width:64px;height:64px;font-size:22px;">{{ user.initials }}</div>
+        <div><h3 style="font-size:18px;">{{ user.name }}</h3></div>
+      </div>
+      <form method="post" action="{{ url_for('profile') }}" style="display:flex;align-items:end;gap:12px;margin-bottom:16px;">
+        <div class="field" style="flex:1;margin-bottom:0;"><label>Name</label><input class="input" type="text" name="display_name" value="{{ user.name }}" placeholder="Your name" required></div>
+        <button class="btn btn-primary" type="submit">Save</button>
+      </form>
+      <div class="modrow"><div class="meta" style="width:120px;">Role</div><span class="pill green">{{ user.role }}</span></div>
+      <div class="modrow"><div class="meta" style="width:120px;">Program</div><div class="nm" style="font-size:13.5px;">{{ user.program }}</div></div>
+      <div class="modrow"><div class="meta" style="width:120px;">Specialization</div><div class="nm" style="font-size:13.5px;">{{ user.specialization }}</div></div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:18px;">
+      <div class="card">
+        <h3 style="font-size:16px;margin-bottom:6px;">Theme</h3>
+        <p class="muted" style="font-size:13px;margin:0 0 16px;">Pick the look of your app.</p>
+        <div class="theme-grid">
+          {% for t in themes %}
+          <div class="theme-card" data-theme="{{ t.id }}"><div class="tc-prev" style="background:linear-gradient(135deg,{{ t.c1 }} 50%,{{ t.c2 }} 50%)"></div><div class="tc-nm">{{ t.name }}</div><div class="tc-sub">{{ t.sub }}</div></div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px;margin-bottom:6px;">Study progress</h3>
+        <p class="muted" style="font-size:13px;margin:0 0 14px;">Which semester are you in right now? This drives what Home shows you and which semester newly completed modules get filed under.</p>
+        <form method="post" action="{{ url_for('profile') }}" style="display:flex;align-items:end;gap:12px;">
+          <div class="field" style="flex:1;"><label>Current semester</label><input class="input" type="number" min="1" name="current_semester" value="{{ config.current_semester }}"></div>
+          <button class="btn btn-primary" type="submit">Save</button>
+        </form>
+      </div>
+      <div class="card" style="border-color:rgba(220,38,38,.35);">
+        <h3 style="font-size:16px;margin-bottom:6px;">Danger zone</h3>
+        <p class="muted" style="font-size:13px;margin:0 0 14px;">Delete everything and start from scratch: your whole module selection, the generated plan, all grades and completion marks, and the chosen specialization + math track are removed. Only the compulsory modules stay as a baseline.</p>
+        <form method="post" action="{{ url_for('reset_plan') }}" onsubmit="return confirm('Delete EVERYTHING and start over? Module selection, plan, grades and specialization will all be reset. This cannot be undone.');">
+          <button class="btn btn-danger" type="submit">Delete all</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

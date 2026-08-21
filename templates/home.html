@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page active">
+  <div class="page-head">
+    <div class="eyebrow">Overview</div>
+    <h1>Welcome back, {{ user.first_name }} </h1>
+    <p class="muted">Here's your current progress in your study plan.</p>
+  </div>
+
+  {% if not has_plan %}
+  <div class="empty card center" style="max-width:560px;margin:40px auto;padding:50px 24px;">
+    <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+    <h1 style="font-size:24px;">You don't have a study plan yet</h1>
+    <p class="muted" style="max-width:420px;margin:10px auto 22px;">Choose your specialization and modules — the planner automatically distributes them across your semesters.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('plan') }}">Create study plan</a>
+  </div>
+  {% else %}
+  <div class="grid g4" style="margin-bottom:22px;">
+    <div class="metric"><div class="lab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4-9-4zM3 7v10l9 4 9-4V7"/></svg>Current semester</div><div class="val">{{ stats.current_sem }}</div><div class="delta">of {{ stats.total_sem }} semesters</div></div>
+    <div class="metric"><div class="lab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Total credits</div><div class="val">{{ stats.credits_done }}<span style="font-size:15px;color:var(--muted);">/{{ stats.credits_total }}</span></div><div class="delta">{{ stats.credits_pct }}% complete</div></div>
+    <div class="metric"><div class="lab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.6 6.6L22 9.2l-5 4.6L18.4 21 12 17.3 5.6 21 7 13.8l-5-4.6 7.4-.6z"/></svg>Avg. grade</div><div class="val">{{ stats.avg_grade }}</div><div class="delta">credit-weighted</div></div>
+    <div class="metric"><div class="lab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 12l3 3 5-6"/></svg>Modules selected</div><div class="val">{{ stats.modules }}</div><div class="delta">in your plan</div></div>
+  </div>
+
+  <div class="grid" style="grid-template-columns:1fr;">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+        <h3 style="font-size:18px;">Your semester {{ semester.number }}</h3>
+        <span class="pill green">{{ semester.term }}</span>
+        <span class="cr" style="margin-left:auto;font-family:var(--font-head);font-weight:700;font-size:18px;">{{ semester.credits }} ECTS</span>
+      </div>
+      <p class="muted" style="font-size:13px;margin:0 0 14px;">{{ semester.modules|length }} modules in this semester</p>
+      {% for m in semester.modules %}
+      <div class="modrow"><div class="tag">{{ m.tag }}</div><div><div class="nm">{{ m.name }}</div><div class="meta">{{ m.id }} · {{ m.exam }} · {{ m.difficulty }}</div></div><div class="cr">{{ m.cr }}</div></div>
+      {% endfor %}
+      <div style="margin-top:18px;">
+        <a class="btn btn-primary" href="{{ url_for('plan') }}">Edit plan</a>
+        <a class="btn btn-ghost" href="{{ url_for('overview') }}">Full plan</a>
+        <a class="btn btn-ghost" href="{{ url_for('statistics') }}">View statistics</a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

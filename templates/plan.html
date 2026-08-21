@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page active">
+  <div class="page-head">
+    <div class="eyebrow">Edit plan</div>
+    <h1>Build your study plan</h1>
+    <p class="muted">Five steps to your personal semester plan.</p>
+  </div>
+
+  <div class="stepper" id="stepper" data-start-step="{{ 5 if blocked_messages else 1 }}">
+    <div class="step cur" data-s="1"><div class="dot">1</div><span>Program</span></div><div class="step-line"></div>
+    <div class="step" data-s="2"><div class="dot">2</div><span>Specialization</span></div><div class="step-line"></div>
+    <div class="step" data-s="3"><div class="dot">3</div><span>Mathematics</span></div><div class="step-line"></div>
+    <div class="step" data-s="4"><div class="dot">4</div><span>Semester</span></div><div class="step-line"></div>
+    <div class="step" data-s="5"><div class="dot">5</div><span>Modules</span></div>
+  </div>
+
+  {% if blocked_messages %}
+  <div class="card" style="border-color:#e5484d; background:rgba(229,72,77,0.06); margin-bottom:16px; padding:16px 20px;">
+    <div style="font-weight:700; color:#c92a2a; margin-bottom:8px;">Plan not created — {{ blocked_messages|length }} requirement(s) still unfulfilled:</div>
+    <ul style="margin:0; padding-left:20px; font-size:13px; line-height:1.7;">
+      {% for msg in blocked_messages %}<li>{{ msg }}</li>{% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <form id="planForm" method="post" action="{{ url_for('plan') }}">
+    <input type="hidden" name="key_area" id="f_key_area" value="{% for k in key_areas %}{{ k.name if k.sel }}{% endfor %}">
+    <input type="hidden" name="math_track" id="f_math_track" value="{% for m in math_tracks %}{{ m.name if m.sel }}{% endfor %}">
+    <input type="hidden" name="sem_start" id="f_sem_start" value="{{ config.sem_start }}">
+
+    <div class="wstep card" data-step="1">
+      <h3 style="margin-bottom:4px;">Choose your program</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 18px;">Currently one program is available — more to come.</p>
+      <div class="grid g3" data-select-group>
+        <div class="opt sel"><h4>B.Sc. Applied Computer Science</h4><p>180 ECTS · 6 semesters</p></div>
+        <div class="opt disabled"><h4>B.Sc. Mathematics</h4><p>Coming soon</p></div>
+        <div class="opt disabled"><h4>B.Sc. Physics</h4><p>Coming soon</p></div>
+      </div>
+    </div>
+
+    <div class="wstep card" data-step="2" style="display:none;">
+      <h3 style="margin-bottom:4px;">Specialization (key area)</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 18px;">Choose your academic specialization.</p>
+      <div class="grid g3" data-select-group data-target="f_key_area">
+        {% for k in key_areas %}
+        <div class="opt {{ 'sel' if k.sel }}" data-value="{{ k.name }}" data-code="{{ k.sub }}"><h4>{{ k.name }}</h4><p>{{ k.sub }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="wstep card" data-step="3" style="display:none;">
+      <h3 style="margin-bottom:4px;">Mathematics module</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 18px;">Which mathematics track would you like to take?</p>
+      <div class="grid" style="grid-template-columns:1fr;gap:12px;" data-select-group data-target="f_math_track">
+        {% for m in math_tracks %}
+        <div class="opt {{ 'sel' if m.sel }}" data-value="{{ m.name }}" data-code="{{ m.sub }}"><h4>{{ m.name }}</h4><p>{{ m.sub }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="wstep card" data-step="4" style="display:none;">
+      <h3 style="margin-bottom:4px;">Semester settings</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 20px;">Define how your studies should be paced.</p>
+      <div class="grid g2" style="gap:22px;">
+        <div class="field"><label>Number of semesters</label><input class="input" type="number" name="semesters" value="{{ config.semester_nr }}"></div>
+        <div class="field"><label>Study start</label>
+          <div style="display:flex;gap:10px;" data-select-group data-target="f_sem_start">
+            <div class="opt {{ 'sel' if config.sem_start == 0 }}" data-value="0" style="flex:1;text-align:center;padding:11px;"><h4 style="font-size:14px;">Winter term</h4></div>
+            <div class="opt {{ 'sel' if config.sem_start == 1 }}" data-value="1" style="flex:1;text-align:center;padding:11px;"><h4 style="font-size:14px;">Summer term</h4></div>
+          </div>
+        </div>
+        <div class="field"><label>Min. credits / semester</label><input class="input" type="number" name="min_credits" value="{{ config.min_credits }}"></div>
+        <div class="field"><label>Max. credits / semester</label><input class="input" type="number" name="max_credits" value="{{ config.max_credits }}"></div>
+      </div>
+      <div class="pill green" style="margin-top:6px;">Recommendation: 30 ECTS per semester to finish in standard time</div>
+    </div>
+
+    <div class="wstep card" data-step="5" style="display:none;">
+      <h3 style="margin-bottom:4px;">Modules by study area</h3>
+      <p class="muted" style="font-size:13px;margin:0 0 18px;">Browse the study areas — expand one to see and select its modules.</p>
+      {% if degree_progress and degree_progress.req %}
+      <div class="acc-item{{ ' done' if degree_progress.done }}" id="degreeProgress" data-req="{{ degree_progress.req }}" style="margin-bottom:18px;">
+        <div class="acc-head" style="cursor:default;">
+          <span class="ttl">{{ degree_progress.name }}</span>
+          <span class="cr area-cr">{{ degree_progress.sel }} / {{ degree_progress.req }} ECTS</span>
+        </div>
+        <div style="padding:0 16px 14px;"><div class="progress acc"><i style="width:{{ degree_progress.pct }}%"></i></div></div>
+      </div>
+      {% endif %}
+      {% macro area_node(n) %}
+      <div class="acc-item {{ 'done' if n.done }}{% if n.code in blocked_areas %} area-blocked open{% endif %}{% if n.type == 'ALL_MANDATORY' %} area-mandatory{% endif %}{% if n.code in spec_codes %} branch-spec{% elif n.code in math_codes %} branch-math{% endif %}"{% if n.code in spec_codes or n.code in math_codes %} data-code="{{ n.code }}"{% endif %}{% if n.req %} data-req="{{ n.req }}"{% endif %}>
+        <div class="acc-head">
+          <span class="ttl"><span class="area-check">✓</span>{{ n.name or n.code }} <span class="muted" style="font-weight:400;">— {{ n.desc }}</span></span>
+          {% if n.req %}<span class="cr area-cr">{{ n.sel }} / {{ n.req }} ECTS</span>{% elif n.type == 'ALL_MANDATORY' %}<span class="cr">mandatory</span>{% endif %}
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="acc-body">
+          {% if n.req %}<div class="progress acc" style="margin-bottom:14px;"><i style="width:{{ n.pct }}%"></i></div>{% endif %}
+          {% for c in n.children %}{{ area_node(c) }}{% endfor %}
+          {% for m in n.modules %}
+          <label class="check {{ 'on' if m.on }}"><input type="checkbox" name="modules" value="{{ m.id }}" data-cr="{{ m.cr }}" {{ 'checked' if m.on }} style="display:none;"><div class="box">✓</div><div><div class="nm">{{ m.name }}</div><div class="meta">{{ m.id }}{% if m.freq %} · {{ m.freq }}{% endif %} · {{ m.cr }} ECTS</div>{% if m.requires %}<div class="prereq">Requires: {% for p in m.requires %}<span class="{{ 'ok' if p.good else 'missing' }}">{{ p.name }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</div>{% endif %}{% if m.excludes %}<div class="prereq">Cannot combine with: {% for p in m.excludes %}<span class="{{ 'ok' if p.good else 'missing' }}">{{ p.name }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</div>{% endif %}</div><div class="cr">{{ m.cr }}</div></label>
+          {% endfor %}
+          {% if not n.children and not n.modules %}<p class="muted" style="font-size:13px;margin:0;">No modules in this area.</p>{% endif %}
+        </div>
+      </div>
+      {% endmacro %}
+      {% for n in area_tree %}{{ area_node(n) }}{% endfor %}
+      {% if not area_tree %}<p class="muted">Module catalogue unavailable — start the backend to load modules.</p>{% endif %}
+    </div>
+
+    <div style="display:flex;align-items:center;gap:12px;margin-top:22px;">
+      <button class="btn btn-ghost" type="button" onclick="wizard(-1)" id="backBtn" style="visibility:hidden;">← Back</button>
+      <div class="muted" style="font-size:13px;" id="wzInfo">Step 1 of 5</div>
+      <div style="flex:1;"></div>
+      <button class="btn btn-primary" type="button" onclick="wizard(1)" id="nextBtn">Next →</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

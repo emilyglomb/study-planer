@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page active">
+  <div class="page-head">
+    <div class="eyebrow">Help</div>
+    <h1>Help & navigation</h1>
+    <p class="muted">How to find your way around StudyPlanner.</p>
+  </div>
+
+  <h3 style="font-size:16px;margin-bottom:14px;">Getting started</h3>
+  <div class="grid g3" style="margin-bottom:28px;">
+    <div class="help-tile"><div class="ic">1</div><div><div class="faq-q">Choose specialization</div><p class="muted" style="margin:0;font-size:13px;">Set program, key area and math module.</p></div></div>
+    <div class="help-tile"><div class="ic">2</div><div><div class="faq-q">Select modules</div><p class="muted" style="margin:0;font-size:13px;">Mark the modules you want per study area.</p></div></div>
+    <div class="help-tile"><div class="ic">3</div><div><div class="faq-q">Generate plan</div><p class="muted" style="margin:0;font-size:13px;">The algorithm distributes everything across semesters.</p></div></div>
+  </div>
+
+  <h3 style="font-size:16px;margin-bottom:14px;">Frequently asked questions</h3>
+  {% for f in faqs %}
+  <div class="acc-item {{ 'open' if loop.first }}">
+    <div class="acc-head"><span class="ttl">{{ f.q }}</span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+    <div class="acc-body"><p class="muted" style="margin:0;">{{ f.a|safe }}</p></div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
